@@ -1,0 +1,132 @@
+.close {
+	margin-top: -12%;
+    color: white;
+    padding: 2% 4%;
+    font-size: 3em;
+    opacity: 0.8;
+}
+.modal-content {
+	background: #fff;
+}
+
+.modal-header {
+	background: black;
+}
+
+.modal-title {
+	color: white;
+}
+
+.modal-body {
+	padding: 20px 50px;
+}
+
+.modal-label {
+	font-size: 20px;
+    font-weight: 600;
+    padding: 0;
+}
+
+.modal-input {
+	border: 2px solid #eaeaea;
+  border-radius: 0;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  transition: all .7s ease;
+  height: 50px;
+}
+
+.modal-input:active, .modal-input:focus {
+	border: 2px solid black;
+    transition: all .7s ease;
+}
+
+.preview {
+	width: 250px;
+	height: 200px;
+	margin-bottom: 20px;
+    border-radius: 4px;
+}
+
+.create-btn {
+    width: 135px;
+    height: 50px;
+    background: none;
+    color: #d4812e;
+    padding: 12px 20px;
+    border: 1px solid #d4812e;
+    cursor: pointer;
+    transition: all .7s ease;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.create-btn:hover {
+  background: #d4812e;
+  color: white;
+  transition: all .7s ease;
+}
+
+.update-btn {
+    width: 135px;
+    height: 50px;
+    background: none;
+    color: #329b27;
+    padding: 12px 20px;
+    border: 1px solid #329b27;
+    cursor: pointer;
+    transition: all .7s ease;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.update-btn:hover {
+  background: #329b27;
+  color: white;
+  transition: all .7s ease;
+}
+
+.delete-btn {
+    width: 135px;
+    height: 50px;
+    background: none;
+    color: #d92432;
+    padding: 12px 20px;
+    border: 1px solid #d92432;
+    cursor: pointer;
+    transition: all .7s ease;
+    font-size: 20px;
+    margin-top: 12px;
+    margin-right: 30px;
+    text-align: left;
+}
+
+.delete-btn:hover {
+  background: #d92432;
+  color: white;
+  transition: all .7s ease;
+}
+
+.close-btn {
+	width: 100px;
+    height: 50px;
+    background: #f90518;
+    color: white;
+    padding: 12px 20px;
+    border: 1px solid #f90518;
+    cursor: pointer;
+    transition: all .7s ease;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-right: 30px;
+    text-align: center;
+    border-radius: 4px;
+}
+.close-btn:hover {
+	opacity: 0.7;
+}

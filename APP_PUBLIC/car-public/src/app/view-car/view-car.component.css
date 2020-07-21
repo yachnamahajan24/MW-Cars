@@ -1,0 +1,20 @@
+h4 {
+	font-family: inherit;
+}
+.car-title {
+	font-size: 4em;
+}
+.para {
+	font-size: 23px;
+}
+.view-img {
+	width: 700px;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+.single-car {
+	margin-bottom: 20%;
+}

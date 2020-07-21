@@ -1,0 +1,65 @@
+
+
+<div *ngIf="car" class="modal fade" tabindex="-1" role="dialog" id="showModal" aria-labelledby="showModalLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+			<div class="modal-header">
+				<h1 *ngIf="car._id" class="modal-title text-center"> Car Details </h1>
+				<h1 *ngIf="!car._id" class="modal-title text-center"> Add New Car </h1>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		        	<span aria-hidden="true">&times;</span>
+		        </button>
+			</div>
+			<div class="modal-body">
+				<form class="modalForm" #carForm=ngForm enctype="multipart/form-data">
+					<div class="form-group">
+						<label for="company" class="col-xs-10 col-sm-2 control-label modal-label">Company</label>
+				    	<input [(ngModel)] = "car.company" class="form-control modal-input" id="company" name="company" required="required" placeholder="Bugatti">
+					</div>
+
+					<div class="form-group">
+						<label for="model" class="col-xs-10 col-sm-2 control-label modal-label">Model</label>
+				    	<input [(ngModel)] = "car.model" class="form-control modal-input" id="model" name="model" required="required" placeholder="Veyron">
+					</div>
+
+					<div class="form-group">
+						<label for="color" class="col-xs-10 col-sm-2 control-label modal-label">Color</label>
+				   	 	<input [(ngModel)] = "car.color" id="color" class="form-control modal-input" name="color" required="required" placeholder="White">
+					</div>
+
+					<div class="form-group">
+						<label for="description" class="col-xs-10 col-sm-2 control-label modal-label">Description</label>
+				    	<input [(ngModel)] = "car.description" class="form-control modal-input" id="description" name="description" required="required" placeholder="5 seats, Manual">
+					</div>
+
+
+					<div class="form-group">
+						<label for="price" class="col-xs-10 col-sm-2 control-label modal-label">Price</label>
+				    	<input type="number" [(ngModel)] = "car.price" id="price" class="form-control modal-input" name="price" required="required">
+					</div>
+
+					<div class="col-xs-10 col-sm-2" *ngIf="!car._id">
+						<img [src] = "imageUrl" class="preview">
+					</div>
+
+					<div class="form-group" *ngIf="!car._id">
+				    	<input type="file" accept="image/*" (change)="handleFileInput($event.target.files)" id="file" class="form-control" name="file" >
+
+
+					</div>
+
+
+				    <button *ngIf="!car._id" (click)="createCar(car)" [disabled] = "!carForm.valid" class="create-btn"><i class="fa fa-mail-forward"></i> &nbsp;Create</button>
+				    <button *ngIf="car._id" (click)="updateCar(car)" class="update-btn"><i class="fa fa-wrench"></i> &nbsp;Update</button>
+				    <button *ngIf="car._id" (click)="deleteCar(car._id)" class="delete-btn"><i class="fa fa-trash-o"></i> &nbsp;Delete</button>
+
+				</form>
+			</div>
+			<div class="modal-footer">
+		        <button type="button" class="close-btn" style="width: 130px; height: 50px;" data-dismiss="modal">Close</button>
+		    </div>
+		</div>
+	</div>
+</div>
+
+

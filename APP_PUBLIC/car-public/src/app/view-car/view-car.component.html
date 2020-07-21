@@ -1,0 +1,19 @@
+
+<div class="container">
+	<div class="row single-car">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+			<h1 class="car-title">{{ pageContent.header.title ? pageContent.header.title : '' }}</h1>
+			<h4>{{ pageContent.header.body }}</h4>
+			<img src="../../assets/img/{{car.image}}" class="view-img" />
+			<br>
+			<br>
+			<p class="para">Description: {{ car.description }}</p>
+			<p class="para">Color: {{ car.color }}</p>
+			<p class="para">Price: $ {{ car.price }}</p>
+		</div>
+		<div class="col-md-2"></div>
+	</div>
+
+</div>
+

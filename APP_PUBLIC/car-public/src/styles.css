@@ -1,0 +1,207 @@
+
+body {
+	margin: 0;
+	font-size: 1.5em;
+	font-family: Calibri;
+    color: black;
+    background-color: #fff;
+}
+
+.homePage {
+    background-image: url('assets/img/bg.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 682px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.mr-2 {
+    margin-right: 20px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.text-center {
+    text-align: center;
+}
+
+small {
+    font-size: 100%;
+}
+.navbar-custom{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar a {
+    color: grey;
+    transition: all 0.5s ease;
+}
+.p-2 {
+    margin-bottom: 10%;
+}
+.nav > li > a:hover, .nav > li > a:focus, .nav > li > a.active {
+    color: white;
+    background: none;
+    transition: all 0.5s ease;
+}
+
+
+.ttl {
+    font-size: 5.3em;
+    font-family: inherit;
+    letter-spacing: 13px;
+    color: #fff;
+    font-weight: 700;
+    position: absolute;
+    top: 2em;
+    left: 1em;
+}
+
+.bdy {
+    font-size: 2.1em;
+    font-family: inherit;
+    letter-spacing: 23px;
+    color: #fff;
+    position: absolute;
+    top: 8.5em;
+    left: 2.6em;
+}
+.explore {
+    width: 22rem;
+    height: 6rem;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    position: absolute;
+    top: 20em;
+    left: 4.7em;
+    letter-spacing: 7px;
+    padding: 15px 16px 10px 30px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: all 1s ease;
+}
+
+.explore:hover {
+    letter-spacing: 10px;
+    padding: 15px 16px 10px 20px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.main-img {
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+}
+
+.bg-b {
+    background-color: black;
+    color: white;
+    position: fixed;
+    min-height: 50px;
+    padding-top: 20px;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+}
+.m-t {
+    margin-top: 4%;
+    overflow-x: hidden;
+}
+
+.m-b {
+    margin-top: 2%;
+}
+.cm-p {
+    padding: 8%;
+}
+.disp {
+    padding: 2%;
+}
+.cmg {
+    text-align: center;
+    padding: 30%;
+}
+.list {
+    list-style-type: none;
+    line-height: 4;
+}
+
+button.navbar-toggle {
+    border: 1px solid white;
+}
+
+
+.contact {
+    width: 100%;
+    height: auto;
+}
+
+.contact-name, .contact-email, .contact-msg {
+  border: 2px solid #eaeaea;
+  border-radius: 0;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  transition: all .7s ease;
+  height: 50px;
+
+}
+
+.contact-name:active, .contact-name:focus, .contact-email:active, .contact-email:focus, .contact-msg:active, .contact-msg:focus {
+    border: 2px solid black;
+    transition: all .7s ease;
+}
+
+.contact-btn {
+    width: 140px;
+    height: 50px;
+    background: none;
+  color: black;
+  padding: 12px 20px;
+  border: 1px solid black;
+  cursor: pointer;
+  transition: all .7s ease;
+}
+
+.contact-btn:hover {
+  background: black;
+  color: white;
+  transition: all .7s ease;
+}
+
+.contact-hr {
+    width: 12%;
+}
+
+
+.contact-form {
+    margin-bottom: 20%;
+}
+
+.contact-label {
+    font-size: 22px;
+    font-weight: 300;
+    padding: 0;
+}
+
+.page-header {
+    border: 0;
+}
+
+h1 {
+    font-family: inherit;
+}

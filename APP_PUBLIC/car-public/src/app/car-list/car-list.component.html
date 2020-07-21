@@ -1,0 +1,32 @@
+
+<div class="container">
+	<h1 class="text-center pb-2 pt-2">{{ pageContent.header.title }}</h1>
+
+	<button class="new-car-btn ml-2" data-toggle="modal" data-target="#showModal" (click)="createCar()"><i class="fa fa-plus"></i> &nbsp; New Car </button>
+
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="col-md-4 p-2" *ngFor= "let car of cars">
+			<div class="car-list">
+		  		<img src="../../assets/img/{{ car.image }}" alt="{{ car.model }}" class="image">
+		  		<div class="overlay">
+		    		<div class="text">
+		    			<p>{{ car.model }}</p>
+						<p>$ {{ car.price }}</p>
+		    			<a data-toggle="modal" data-target="#showModal" (click)="selectCar(car)" [class.active]="car === selectedCar" class="editModal"><i class="fa fa-pencil"></i> Edit</a>
+		    			<a routerLink="{{car._id}}" class="view-page"><i class="fa fa-eye"></i> View</a>
+		    		</div>
+		  		</div>
+			</div>
+		</div>
+	</div>
+ 
+</div>
+<app-details-page
+	[car]="selectedCar"
+	[createHandler]="addCar"
+	[updateHandler]="updateCar"
+	[deleteHandler]="deleteCar">
+</app-details-page>
